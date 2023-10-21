@@ -1,0 +1,150 @@
+* {
+padding: 0;
+list-style: none;
+/* border: 1px solid red; */
+margin: 0;
+box-sizing: border-box;
+font-family: "poppins", sans-serif;
+scroll-behavior: smooth;
+text-decoration: none;
+}
+
+
+/* awal layout untuk header */
+header {
+display: flex;
+align-items: center;
+background-color: #d6d5d6;
+padding: 30px;
+align-items: center;
+justify-content: space-between;
+}
+/* akhir layout header */
+
+
+/* awal layout untuk navbar */
+.navbar{
+display: flex;
+align-items: center;
+justify-content: flex-end;
+}
+
+.navbar ul {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.navbar li {
+margin: 0 1rem;
+}
+
+.navbar li a {
+color: #333;
+font-weight: bold;
+font-weight: bold;
+padding: 8px 12px;
+border-radius: 4px;
+}
+
+.navbar a:hover {
+background-color: #ffffff;
+}
+/* Akhir layout navbar */
+
+
+/* awal layout untuk container yang didalamnya section content dan section sidebar */
+.container {
+display: flex;
+justify-content: space-between;
+align-items: flex-start;
+padding: 1rem;
+flex-direction: row;
+}
+
+/* awal layout untuk tabel */
+.container-table {
+display: flex;
+margin-top: 10px;
+/* justify-content: space-between; */
+align-items: flex-start;
+flex-direction: row;
+width: 78%;
+border-radius: 4px;
+}
+
+.row-column {
+width: 100%;
+display: flex;
+flex-direction: column;
+/* align-items: center; */
+}
+
+.row-column .title1 {
+border-radius: 10px 0 0 0;
+background-color: rgb(4, 84, 155);
+color: white;
+font-weight: bold;
+padding: 0.8rem;
+}
+.row-column .title2 {
+border-radius: 0 10px 0 0;
+background-color: rgb(4, 84, 155);
+color: white;
+font-weight: bold;
+padding: 0.8rem;
+}
+
+.value{
+height: 120px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.row-column div {
+padding: 0.8rem;
+border: 1px solid black;
+width: 100%;
+text-align: center;
+background-color: white;
+}
+/* akhir dari layout untuk table evaluasi */
+
+
+/* awal dari layout untuk section sidebar */
+.section-sidebar {
+border: 1px solid black;
+border-radius: 5px;
+margin-top: 10px;
+background-color: #f2f2f2;
+margin-right: 10px;
+padding: 10px;
+width: 20%;
+position: sticky;
+top: 30px;
+}
+
+.sidebox {
+width: 100%;
+background-color: #e6e6e6;
+padding: 10px;
+margin-bottom: 5px;
+}
+
+.reference-link {
+display: block;
+text-decoration: none;
+color: #281dbe;
+}
+/* akhir dari section sidebar */
+
+
+/* awal dari layout untuk footer */
+footer {
+background-color: #333;
+color: #fff;
+padding: 20px;
+text-align: center;
+}
+/* end footer */

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets/css/form.css">
+        <title>Formulir Pendaftaran Tiket</title>
+    </head>
+    <body>
+        <!-- Awal membuat header -->
+        <header>
+            <div class="title-header">
+                <h2>Jatim & Bali Travel Agency</h2>
+            </div>
+            <!-- membuat navigation bar -->
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="form.html">Form</a></li>
+                    <li><a href="evaluation.html">Evaluation</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            </nav>
+            <!-- akhir membuat navigation bar -->
+        </header>
+        <!-- akhir membuat header -->
+
+        <!-- Membuat section container yang didalamnya ada content dan sidebar -->
+        <section class="container">
+            <!-- Membuat section content -->
+            <div class="section-content">
+                <div class="form-info">
+                    <h1>Mohon untuk mengisi formulir untuk memesan tiket</h1>
+                </div>
+                <!-- membuat form untuk -->
+                <div class="form-core">
+                    <form id="myForm" method="post">
+                        <div class="form-group">
+                            <label for="name">Nama Lengkap:</label>
+                            <input type="text" id="name" name="name" placeholder="Masukkan Nama Lengkap Anda">
+                            <small class="error-messages"></small>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="text" id="email" name="email" placeholder="Masukkan Email Anda">
+                            <small class="error-messages"></small>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Nomer Mobile Phone:</label>
+                            <input type="text" id="phone" name="phone" placeholder="Masukkan Nomer Mobile Phone Anda">
+                            <small class="error-messages"></small>
+                        </div>
+                        <div class="form-group">
+                            <label>Jenis Kelamin:</label>
+                            <div class="gender-options">
+                                <div>
+                                    <input type="radio" id="male" name="gender" value="male">
+                                    <label for="male" class="gender">Laki-laki</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="female" name="gender" value="female">
+                                    <label for="female" class="gender">Perempuan</label>
+                                </div>
+                            </div>
+                            <small class="error-messages"></small>
+                        </div>
+                        <div class="form-group">
+                            <label for="address">Alamat:</label>
+                            <textarea id="address" name="address" placeholder="Masukkan Alamat Anda"></textarea>
+                            <small class="error-messages"></small>
+                        </div>
+                        <div class="form-group">
+                            <label for="date">Tanggal Keberangkatan:</label>
+                            <input type="date" id="date" name="date">
+                            <small class="error-messages"></small>
+                        </div>
+                        <div class="form-group">
+                            <label for="coupon">Kupon:</label>
+                            <input type="text" id="coupon" name="coupon" placeholder="Masukkan kupon untuk mendapatkan potongan harga">
+                            <small class="error-messages"></small>
+                        </div>
+                        <div class="form-group">
+                            <label for="transportation">Pilih transportasi untuk berangkat liburan:</label>
+                            <select name="transportation" id="transportation">
+                                <option value="" disabled selected>Pilih ingin naik transportasi apa untuk berangkat liburan</option>
+                                <option value="1">1. Pesawat</option>
+                                <option value="2">2. Bus</option>
+                                <option value="3">3. Kereta Api</option>
+                            </select>
+                            <small class="error-messages"></small>
+                        </div>
+                        <div class="form-group">
+                            <label for="transportasi">Pilih transportasi untuk pulang liburan:</label>
+                            <select name="transportasi" id="transportasi">
+                                <option value="" disabled selected>Pilih ingin naik transportasi apa untuk pulang setelah liburan</option>
+                                <option value="1">1. Pesawat</option>
+                                <option value="2">2. Bus</option>
+                                <option value="3">3. Kereta Api</option>
+                            </select>
+                            <small class="error-messages"></small>
+                        </div>
+                        <div class="form-group">
+                            <label for="destination">Pilih liburan di kota mana:</label>
+                            <select name="destination" id="destination">
+                                <option value="" disabled selected>Pilih kota yang diinginkan</option>
+                                <option value="1">1. Kota Banyuwangi</option>
+                                <option value="2">2. Kota Malang</option>
+                                <option value="3">3. Kota Jember</option>
+                                <option value="4">4. Kota Surabaya</option>
+                                <option value="5">5. Pulau Bali</option>
+                                <option value="6">6. Kota Probolinggo</option>
+                            </select>
+                            <small class="error-messages"></small>
+                        </div>
+                        <div class="form-group">
+                            <label>Ingin menerima informasi dari kami melalui?</label>
+                            <div class="notif-checkbox">
+                                <div>
+                                    <input type="checkbox" id="email-checkbox" name="email-checkbox">
+                                    <label for="email-checkbox">Email</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="phone-checkbox" name="phone-checkbox">
+                                    <label for="phone-checkbox">Phone</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="submit">
+                            <button type="submit" id="submit" name="submit" value="Submit">Pesan Sekarang</button>
+                        </div>
+                        <div id="notifikasi"></div>
+                    </form>
+                </div>
+
+            </div>
+            <!-- Akhir dari section content -->
+
+            <!-- Membuat section sidebar -->
+            <aside class="section-sidebar">
+                <!-- <h2>Referensi</h2> -->
+                <div class="sidebox">
+                    <a href="index.html" class="reference-link">Previous Page</a>
+                </div>
+                <div class="sidebox">
+                    <a href="evaluation.html" class="reference-link">Next Page</a>
+                </div>
+        </aside>
+            <!-- Akhir dari section sidebar -->
+        </section>
+        <!-- Akhir dari section container -->
+
+        <!-- Membuat section footer -->
+        <footer>
+            <p>Dasar Pemrogrman Web / IF 2B / DPW2022-2-B08</p>
+            <p>&copy; Jatim & Bali Travel Agency 2023</p>
+        </footer>
+        <!-- Akhir dari section footer -->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>

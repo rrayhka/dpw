@@ -1,0 +1,159 @@
+* {
+/* border: 1px solid red; */
+padding: 0;
+list-style: none;
+margin: 0;
+box-sizing: border-box;
+font-family: "poppins", sans-serif;
+scroll-behavior: smooth;
+text-decoration: none;
+}
+
+/* awal layout untuk header */
+header {
+display: flex;
+align-items: center;
+background-color: #d6d5d6;
+padding: 30px;
+align-items: center;
+justify-content: space-between;
+}
+/* akhir layout header */
+
+
+/* awal layout untuk navbar */
+.navbar{
+display: flex;
+align-items: center;
+justify-content: flex-end;
+}
+
+.navbar ul {
+list-style-type: none;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 0;
+margin: 0;
+}
+
+.navbar li {
+margin: 0 1rem;
+}
+
+.navbar li a {
+text-decoration: none;
+color: #333;
+font-weight: bold;
+font-weight: bold;
+padding: 8px 12px;
+border-radius: 4px;
+}
+
+.navbar a:hover {
+background-color: #ffffff;
+}
+/* Akhir layout navbar */
+
+
+/* awal layout untuk container yang didalamnya ada section content dan section sidebar */
+.container {
+display: flex;
+justify-content: space-between;
+align-items: flex-start;
+padding: 1rem;
+flex-direction: row;
+}
+
+/* Awal layout untuk membuat tabel tugas pembagian */
+.container-table {
+display: flex;
+margin-top: 10px;
+width: 97%;
+border-radius: 4px;
+}
+
+.idk{
+display: flex;
+flex-direction: column;
+width: 100%;
+}
+
+.ha{
+  align-self: center;
+  margin-top: 20px;
+}
+
+.row-column {
+width: 100%;
+display: flex;
+flex-direction: column;
+}
+
+.row-column .title {
+background-color: rgb(4, 84, 155);
+color: white;
+font-weight: bold;
+padding: 0.8rem;
+}
+
+.value{
+height: 50px;
+display: flex;
+text-align: center;
+align-items: center;
+justify-content: center;
+}
+
+.row-column div {
+padding: 0.8rem;
+border: 1px solid black;
+width: 100%;
+text-align: center;
+background-color: white;
+}
+/* end layout tabel */
+
+
+/* awal dari sidebox */
+.section-sidebar {
+border: 1px solid black;
+border-radius: 5px;
+float: right;
+margin-top: 10px;
+background-color: #f2f2f2;
+margin-right: 10px;
+justify-content: center;
+padding: 10px;
+width: 20%;
+position: sticky;
+top: 30px;
+}
+
+.sidebox {
+overflow: scroll;
+height: 347px;
+margin-top: 20px;
+width: 100%;
+background-color: #e6e6e6;
+padding: 10px;
+float: right;
+}
+
+.reference-link {
+display: block;
+text-decoration: none;
+color: #281dbe;
+}
+/* akhir dari sidebox */
+
+
+
+/* awal footer */
+footer {
+background-color: #333;
+color: #fff;
+padding: 20px;
+text-align: center;
+}
+/* end footer */

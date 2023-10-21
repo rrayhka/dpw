@@ -1,0 +1,212 @@
+* {
+padding: 0;
+list-style: none;
+margin: 0;
+box-sizing: border-box;
+font-family: "poppins", sans-serif;
+}
+
+
+/* awal layout untuk header */
+header {
+display: flex;
+background-color: #d6d5d6;
+padding: 30px;
+justify-content: space-between;
+}
+/* akhir layout header */
+
+
+/* awal layout untuk navbar */
+.navbar{
+display: flex;
+align-items: center;
+}
+
+.navbar ul {
+list-style-type: none;
+display: flex;
+}
+
+.navbar li {
+margin: 0 1rem;
+}
+
+.navbar li a {
+text-decoration: none;
+color: #333;
+font-weight: bold;
+font-weight: bold;
+padding: 8px 12px;
+border-radius: 4px;
+}
+
+.navbar a:hover {
+background-color: #ffffff;
+}
+/* Akhir layout navbar */
+
+
+/* awal layout untuk container yang didalamnya ada content dan sidebar */
+.container {
+display: flex;
+align-items: flex-start;
+padding: 1rem;
+flex-direction: row;
+}
+
+/* layout untuk section content */
+.section-content {
+margin-top: 10px;
+padding: 1rem;
+width: 79%;
+justify-content: center;
+}
+
+
+/* awal layout untuk formulir */
+.form-info{
+background-color: rgb(4, 84, 155);
+border-radius: 5px 5px 0 0;
+}
+
+.form-info h1{
+color: #fff;
+text-align: center;
+padding: 10px;
+}
+
+
+/* awal layout untuk membuat form */
+.form-core {
+background-color: #f2f2f2;
+border-radius: 0 0 10px 10px;
+padding: 20px;
+margin: auto;
+max-width: 1200px;
+}
+
+
+.form-group {
+margin-top: 20px;
+}
+
+
+label {
+display: block;
+font-weight: bold;
+margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="date"],
+textarea,
+select {
+width: 100%;
+padding: 10px;
+border: 1px solid #ccc;
+border-radius: 5px;
+margin-bottom: 5px;
+}
+
+
+/* awal layout untuk gender */
+.gender-options {
+display: flex;
+}
+
+.gender-options div {
+display: flex;
+margin-right: 20px;
+/* align-items: center; */
+}
+
+.gender-options input[type="radio"],
+.gender-options label {
+display: block;
+margin-right: 5px;
+}
+
+
+.notif-checkbox{
+display: flex;
+}
+
+.notif-checkbox div{
+display: flex;
+margin-right: 20px;
+/* align-items: center; */
+}
+.notif-checkbox input[type="checkbox"],
+.notif-checkbox label{
+display: block;
+margin-right: 5px;
+}
+
+button {
+margin-top: 10px;
+padding: 10px 20px;
+width: 100%;
+}
+
+small{
+color: red;
+font-size: 12px;
+}
+
+.submit {
+text-align: center;
+width: auto;
+}
+
+.submit button {
+padding: 10px 20px;
+background-color: #4CAF50;
+color: #fff;
+border-radius: 4px;
+font-size: 18px;
+cursor: pointer;
+}
+
+.submit button:hover {
+background-color: #45a049;
+}
+/* akhir dari untuk form */
+
+
+/* awal dari layout sidebar */
+.section-sidebar {
+border: 1px solid black;
+border-radius: 5px;
+margin-top: 10px;
+background-color: #f2f2f2;
+margin-right: 10px;
+padding: 10px;
+width: 20%;
+position: sticky;
+top: 30px;
+}
+
+.section-sidebar .sidebox {
+width: 100%;
+background-color: #e6e6e6;
+padding: 10px;
+margin-bottom: 5px;
+}
+
+.reference-link {
+display: block;
+text-decoration: none;
+color: #281dbe;
+}
+/* akhir dari layout dari sidebar */
+
+
+/* awal layout untuk footer */
+footer {
+background-color: #333;
+color: #fff;
+padding: 20px;
+text-align: center;
+}
+/* end footer */

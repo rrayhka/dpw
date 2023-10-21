@@ -1,0 +1,394 @@
+/* mensetting layout css semua dengan  */
+* {
+/* border: 1px solid red; */
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+font-family: "poppins", sans-serif;
+scroll-behavior: smooth;
+text-decoration: none;
+}
+
+
+/* awal layout untuk header */
+header {
+display: flex;
+background-color: #d6d5d6;
+padding: 30px;
+justify-content: space-between;
+}
+/* akhir layout header */
+
+
+/* awal layout untuk navbar atau menu */
+.navbar{
+display: flex;
+justify-content: flex-end;
+}
+
+.navbar ul {
+list-style-type: none;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.navbar li {
+margin: 0 1rem;
+}
+
+.navbar li a {
+color: #333;
+font-weight: bold;
+padding: 8px 12px;
+border-radius: 4px;
+}
+
+.navbar a:hover {
+background-color: #ffffff;
+}
+/* Akhir layout navbar */
+
+
+/* Layout untuk container yang didalamnya ada content dan sidebar */
+.container {
+display: flex;
+align-items: flex-start;
+padding: 1rem;
+flex-direction: row;
+}
+
+/* awal Layout untuk seluruh isi content */
+.section-content {
+margin-top: 10px;
+padding: 1rem;
+width: 88%;
+}
+
+/* start banner layout */
+.container .section-content .banner {
+border-radius: 10px;
+padding: 300px 0;
+background: url("../images/Uluwatu_Temple.png");
+background-size: cover;
+background-position: center;
+position: relative;
+}
+
+.container .section-content .banner h1 {
+color: white;
+font-size: 50px;
+text-align: center;
+margin-bottom: 20px;
+font-weight: bold;
+text-shadow: 2px 2px 4px #000000;
+text-transform: capitalize;
+}
+
+.container .section-content .banner p {
+color: white;
+font-size: 20px;
+text-align: center;
+font-weight: bold;
+text-shadow: 2px 2px 4px #000000;
+margin-bottom: 15px;
+}  
+/* akhir layout untuk banner  */
+
+
+/* section informasi */
+.informasi{
+display: flex;
+flex-direction: row;
+margin-top: 20px;
+margin-bottom: 20px;
+}
+
+.informasi .line{
+border: 2px solid black;
+border-radius: 10px;
+margin-left: 20px;
+}
+
+.informasi h3{
+margin-bottom: 15px;
+text-align: center;
+}
+
+.info{
+margin-left: 10px;
+text-align: justify;
+margin-right: 10px;
+}
+
+.info p{
+margin-bottom: 10px;
+}
+
+.informasi .lines{
+margin-right: 20px;
+border: 2px solid black;
+border-radius: 10px;
+}
+/* end informasi */
+
+
+/* awal Layout untuk section layanan kami */
+.service {
+background-color: #407dafc9;
+width: auto;
+height: 305px;
+margin: 10px 0px 10px 0px;
+border-radius: 10px;
+}
+
+.service h2 {
+color: white;
+font-size: 20px;
+text-align: center;
+padding: 15px;
+font-weight: bold;
+text-shadow: 2px 2px 4px #000000;
+text-transform: uppercase;
+}
+
+.all-service {
+display: flex;
+flex-direction: row;
+}
+
+.service-item {
+display: flex;
+flex-direction: column;
+margin-top: 20px;
+align-items: center;
+text-align: justify;
+border-radius: 10px;
+padding: 20px;
+}
+
+.service-item img {
+width: 50px;
+height: 50px;
+border-radius: 50%;
+margin-bottom: 10px;
+}
+/* akhir layout untuk layanan kami */
+
+
+/* Awal layout untuk section destinasi di dalam section content */
+.destinasi{
+background-color: rgb(4, 84, 155);
+border-radius: 10px;
+height: 100%;
+}
+
+.destinasi h2{
+text-align: center;
+color: white;
+}
+.destination {
+background-color: #f2f2f2;
+margin-top: 10px;
+padding: 1rem;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+}
+
+.destination-item {
+display: flex;
+flex-direction: column;
+background-color: #fff;
+border-radius: 10px;
+box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+width: 32%;
+margin: 20px 0;
+}
+
+.destination-item .head {
+margin-bottom: 15px;
+position: relative;
+overflow: hidden;
+border-radius: 10px 10px 0 0;
+}
+
+.head img {
+width: 100%;
+height: 250px;
+}
+
+
+
+.destination-item .content {
+display: flex;
+flex-direction: column;
+height: 100%;
+width: 95%;
+padding: 0 20px;
+}
+
+.content .content-title {
+font-weight: 600;
+max-width: 100%;
+margin-bottom: 10px;
+margin-top: 5px;
+}
+
+.content ul {
+padding-left: 20px;
+}
+
+.hari{
+list-style-type: none;
+font-weight: 600;
+}
+
+li{
+max-width: auto;
+}
+
+.content .label {
+margin-top: auto;
+align-self: center;
+}
+.label{
+padding: 1rem;
+}
+
+.label span {
+margin-right: 10px;
+padding: 10px;
+color: #fff;
+border-radius: 5px;
+}
+
+.label span a {
+color: #fff;
+text-decoration: none;
+}
+
+.label span:nth-child(1) {
+background-color: #27989c;
+}
+
+.label span:nth-child(2) {
+background-color: #333;
+}
+
+/* selesai membuat section destinasi */
+
+
+
+/* awal layout untuk section transportasi */
+.transportation {
+background-color: rgb(4, 84, 155);
+border-radius: 10px;
+margin-top: 10px;
+}
+
+.transportation h2 {
+text-align: center;
+color: white;
+}
+
+.transportation-galery {
+background-color: #f2f2f2;
+width: 100%;
+margin-top: 10px;
+margin-bottom: 20px;
+padding: 1rem;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+}
+
+.transportation-head img {
+width: 100%;
+}
+
+.transportasi {
+display: flex;
+flex-direction: column;
+background-color: #fff;
+border-radius: 10px;
+box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+width: 32%;
+height: 300px;
+margin-bottom: 20px;
+}
+
+.transportation-head img {
+border-radius: 10px 10px 0 0;
+height: 190px;
+object-fit: cover;
+}
+
+.transportasi .content-item {
+padding: 15px;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+height: 100%;
+}
+
+.transportasi .content-item .content-title {
+font-weight: 600;
+color: #fff;
+border-radius: 5px;
+background-color: #0ecca3;
+padding: 5px;
+text-align: center;
+}
+
+.transportasi .content-item .content-location {
+color: #444;
+text-align: center;
+margin-top: 10px;
+}    
+/* akhir tranportasi */
+
+
+
+
+
+
+/* awal layout untuk sidebar */
+.section-sidebar {
+border-radius: 5px;
+margin-top: 10px;
+background-color: #f2f2f2;
+padding: 10px;
+width: 12%;
+position: sticky;
+top: 30px;
+}
+
+.section-sidebar h3{
+text-align: center;
+}
+
+.sidebox {
+margin-top: 10px;
+border-radius: 5px;
+width: 100%;
+background-color: #e6e6e6;
+padding: 10px;
+}
+
+.reference-link {
+display: block;
+text-decoration: none;
+color: #281dbe;
+}
+/* akhir layout untuk sidebar */
+
+
+/* awal layout untuk footer */
+footer {
+background-color: #333;
+color: #fff;
+padding: 20px;
+text-align: center;
+}
+/* akhir layout untuk footer */
